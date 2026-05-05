@@ -1,0 +1,64 @@
+.loginPage { display: flex; align-items: center; justify-content: center; min-height: calc(100vh - 56px); padding: 24px; }
+.loginCard { background: var(--bg2); border: 1px solid var(--border2); border-radius: 20px; padding: 40px; width: 100%; max-width: 380px; }
+.loginIcon { font-size: 40px; margin-bottom: 16px; text-align: center; }
+.loginTitle { font-family: var(--display); font-size: 22px; font-weight: 700; margin-bottom: 28px; text-align: center; }
+
+.page { min-height: calc(100vh - 56px); }
+.header { display: flex; align-items: center; justify-content: space-between; padding: 20px 32px; border-bottom: 1px solid var(--border); background: var(--bg2); flex-wrap: wrap; gap: 12px; }
+.headerLeft { display: flex; align-items: center; gap: 12px; }
+.logo { font-family: var(--display); font-size: 18px; font-weight: 700; }
+.badge { background: var(--glow); color: var(--accent3); font-size: 12px; font-weight: 700; padding: 4px 12px; border-radius: 99px; }
+
+.tabs { display: flex; gap: 4px; padding: 16px 32px 0; border-bottom: 1px solid var(--border); background: var(--bg2); }
+.tabBtn { padding: 10px 18px; border-radius: 8px 8px 0 0; font-size: 13px; font-weight: 500; color: var(--text3); background: none; border: none; cursor: pointer; font-family: var(--font); transition: all .12s; border-bottom: 2px solid transparent; }
+.tabBtn:hover { color: var(--text2); }
+.tabActive { color: var(--text); border-bottom-color: var(--accent); }
+
+.content { padding: 32px; max-width: 1100px; }
+.sectionTitle { font-family: var(--display); font-size: 18px; font-weight: 700; margin-bottom: 16px; }
+.empty { background: var(--bg2); border: 1px solid var(--border); border-radius: 14px; padding: 40px; text-align: center; color: var(--text2); font-size: 14px; }
+
+.courseTable { display: flex; flex-direction: column; gap: 1px; background: var(--border); border-radius: 12px; overflow: hidden; }
+.tableHeader { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr 2fr; gap: 16px; padding: 12px 20px; background: var(--bg3); font-size: 11px; font-weight: 700; color: var(--text3); text-transform: uppercase; letter-spacing: .08em; }
+.tableRow { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr 2fr; gap: 16px; padding: 14px 20px; background: var(--bg2); align-items: center; transition: background .12s; }
+.tableRow:hover { background: var(--bg3); }
+.courseInfo { display: flex; align-items: center; }
+
+.jsonEditor {
+  width: 100%; padding: 16px 18px;
+  background: var(--bg); color: var(--text);
+  font-family: var(--mono); font-size: 12.5px; line-height: 1.7;
+  border: 1px solid var(--border2); border-radius: 12px;
+  outline: none; resize: vertical; min-height: 400px;
+  tab-size: 2;
+}
+.jsonEditor:focus { border-color: var(--accent); }
+
+.templatePre {
+  background: var(--bg); border: 1px solid var(--border);
+  border-radius: 12px; padding: 20px 22px;
+  font-family: var(--mono); font-size: 12px; line-height: 1.8;
+  color: var(--text2); overflow-x: auto; white-space: pre;
+  max-height: 600px; overflow-y: auto;
+}
+
+.docs {}
+.testTypeList { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; }
+.testTypeCard { background: var(--bg2); border: 1px solid var(--border); border-radius: 12px; padding: 16px 18px; }
+.testTypeName { font-family: var(--mono); font-size: 13px; font-weight: 700; color: var(--accent3); margin-bottom: 4px; }
+.testTypeLabel { font-size: 13px; color: var(--text); margin-bottom: 6px; }
+.testTypeFields { font-size: 12px; color: var(--text3); margin-bottom: 10px; }
+.testTypeExample { background: var(--bg3); border-radius: 8px; padding: 10px 12px; font-family: var(--mono); font-size: 11px; color: var(--text2); overflow-x: auto; }
+
+.grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 16px; }
+.docLabel { font-size: 11px; font-weight: 700; color: var(--text3); text-transform: uppercase; letter-spacing: .08em; margin-bottom: 10px; }
+.docItem { padding: 7px 12px; background: var(--bg2); border-radius: 7px; margin-bottom: 6px; }
+.docItem code { font-family: var(--mono); font-size: 13px; color: var(--accent3); background: none; padding: 0; }
+
+@media (max-width: 900px) {
+  .tableHeader, .tableRow { grid-template-columns: 1fr 1fr; }
+  .tableHeader span:nth-child(n+3), .tableRow span:nth-child(n+3) { display: none; }
+  .testTypeList { grid-template-columns: 1fr; }
+  .content { padding: 20px 16px; }
+  .header { padding: 16px; }
+}
