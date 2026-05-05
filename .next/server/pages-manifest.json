@@ -1,9 +1,0 @@
-{
-  "/_app": "pages/_app.js",
-  "/_error": "pages/_error.js",
-  "/_document": "pages/_document.js",
-  "/xk9-admin": "pages/xk9-admin.js",
-  "/api/admin/courses": "pages/api/admin/courses.js",
-  "/cours": "pages/cours.js",
-  "/api/admin/login": "pages/api/admin/login.js"
-}
